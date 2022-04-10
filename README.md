@@ -26,7 +26,7 @@ Figure 2: Workflow of QSAR modelling for investigation of collagen binding affin
 ## Usage 
 ### Building a model 
 
-Currently, there program is not ready for compiling a big set of large proteins (>10K Da). For now, we suggest to 'add' every new molecule one by another to the dataset OR in small sets. 
+Currently, there program is not ready for compiling a big set of large proteins (>10K Da). It will run, but the calculation of descriptors takes a lot of time. For now, we suggest to 'add' every new molecule one by another to the dataset OR in small sets. 
 
 - The input dataset should be in .xlsx format. 
 - The input dataset should be saved in the same file as the repository (the repository needs to be installed locally first). 
@@ -34,4 +34,7 @@ Currently, there program is not ready for compiling a big set of large proteins 
 - The first column should contain row indices. 
 
 #### Example: 
+![deepBind](db_example.png)
+
+After the dataset is ready it can be used to find its best regressor algorithm - run comparing_regressor.py in the terminal. 
 
