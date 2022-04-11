@@ -36,5 +36,15 @@ Currently, there program is not ready for compiling a big set of large proteins 
 #### Example: 
 ![deepBind](db_example.png)
 
-After the dataset is ready it can be used to find its best regressor algorithm - run comparing_regressor.py in the terminal. 
+1. Save the data containg 1 or more proteins in the file name 'your_input_file.xlsx'.
+2. Run in the terminal 'fingerprint_calculator.py'.
+3. Manually add the results from 'CollagenBindingProtein_data_pKd_PubChem_fp.xlsx' to your other personal file. 
+4. Once all descriptors have been calculate, use build_model.py to select the best regresssion model and build it. 
+5. The model is saved in the file 'CollagenBindingProteins_model.pkl' and ready to use.
 
+As an example, we provide small dataset for free. Please, divide the dataset into a sets of 5 compounds and run the fingeprint calculations on them separately. 
+
+### Prediction of unknown drugs 
+
+If the model has been built and saved under the name as specified in the script, predict_in_one_go.py can be directly used. The result will be saved in the file 'prediction_output_data.xlsx'. 
+- The input data needs to be in the structure as with the input dataset, except there is no column for 'Kd'. 
