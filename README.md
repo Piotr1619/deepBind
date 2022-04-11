@@ -4,6 +4,8 @@
 
 ### Authors: Piotr Gidzinski, Christopher Li, Iva Grujic, Rea Tresa, Shirin Bamezai, Lukenny Freire Tinta. 
 
+!!! The whole project's content is located in the main branch !!! 
+
 Studying the drug-target interactions is crucial for finding new candidates and it can also be used to discover drugs for localised cancer immunotherapy.
 Collagen binding drugs accumulate in the tumour stroma where they strongly bind to large amounts of leaked collagen, generating a gradient through which T cells can enter the tumour stroma and enhance antitumoral activity. Hence, proteins with a high affinity to collagen are key to finding future drug candidates. 
 
