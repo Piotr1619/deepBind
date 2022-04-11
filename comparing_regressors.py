@@ -13,8 +13,8 @@ import seaborn as sns
 
 
 # That's what should be - at the end
-# df = pd.read_excel('CollagenBindingProteins_data_pKd_PubChem_fp.xlsx')
-df = pd.read_excel('descriptors_pKd_20proteins_data.xlsx')
+df = pd.read_excel('descriptors_input_to_predict.xlsx')
+# df = pd.read_excel('descriptors_pKd_20proteins_data.xlsx')
 X = df.drop('pKd', axis=1)
 Y = df.pKd
 

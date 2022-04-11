@@ -1,3 +1,13 @@
+'''
+author = @pg
+Sun 3 April 2022
+
+Predict In One Go - the program allows you to:
+- convert aa sequence into SMILES
+- calculate Molecular fingerprints
+- use the built model to fit the input into it and give prediction values (in pKd units)
+'''
+
 import pandas as pd
 from rdkit import Chem
 import subprocess
@@ -35,7 +45,7 @@ os.remove('molecule.smi')
 dataset_to_predict= pd.read_csv('descriptors_output.csv')
 # Save it
 dataset_to_predict.to_excel('descriptors_input_to_predict.xlsx')
-# os.remove('descriptors_output.csv')
+
 
 '''
 LOADING MODEL

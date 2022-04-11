@@ -11,12 +11,9 @@ import pandas as pd
 import subprocess
 import os
 
-
 # Upload SMILES strings of the proteins of interest:
-df = pd.read_excel('abc.xlsx')
+df = pd.read_excel('your_input_file.xlsx')
 selection = ['Smiles','Name']
-# df = pd.read_excel('abcd.xlsx')
-# selection = ['canonical_smiles','molecule_chembl_id']
 df_selection = df[selection]
 df_selection.to_csv('molecule.smi', sep='\t', index=False, header=False)
 
@@ -33,4 +30,4 @@ df2_Y = df['pKd']
 #Combine fingerprint and pKd together
 dataset = pd.concat([df2_X,df2_Y], axis=1)
 # Save it
-dataset.to_excel('CollagenBindingProteins_data_pKd_PubChem_fp.xlsx')
+dataset.to_excel('CollagenBindingProtein_data_pKd_PubChem_fp.xlsx')

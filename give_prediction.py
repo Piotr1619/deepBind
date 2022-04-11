@@ -1,6 +1,8 @@
 '''
 author = @pg
 Sun 3 Apr 2022
+
+The script allows to predict values from the input in the form of molecular descriptors.
 '''
 
 import pandas as pd
@@ -10,7 +12,6 @@ load_model = pickle.load(open('CollagenBindingProteins_ExtraTrees_model.pkl', 'r
 
 # Upload input data to predict
 data_to_predict = pd.read_excel('descriptors_input_to_predict.xlsx')
-data_for_predict = pd.read_excel('descriptors_pKd_20proteins_data.xlsx')
 X = data_for_predict.drop(['pKd'], axis=1)
 Y = data_for_predict.pKd
 
